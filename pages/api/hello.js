@@ -3,7 +3,7 @@ const {
     OpenAIApi
 } = require("openai");
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: process.env.KEY,
 });
 const openai = new OpenAIApi(configuration);
 const removeMd = require('remove-markdown');
