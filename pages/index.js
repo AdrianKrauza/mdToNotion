@@ -3,6 +3,17 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  function handler() {
+    const removeMd = require('remove-markdown');
+    let markdown =
+
+    markdown = markdown.replaceAll("#","£")
+    const plainText = removeMd(markdown).replaceAll("£","#"); //?
+    const test = plainText.split("###" )
+    console.log(test)
+  }
+
+  handler()
   return (
     <div className={styles.container}>
       <Head>
