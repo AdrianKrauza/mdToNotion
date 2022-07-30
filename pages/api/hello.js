@@ -39,6 +39,7 @@ const generateBody = async(body) => {
 
 
 const translate = async (req, res) => {
+
     let markdown = req.body
     markdown = markdown.replaceAll("#","£")
     const plainText = removeMd(markdown).replaceAll("£","#");
