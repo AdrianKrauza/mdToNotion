@@ -1,8 +1,5 @@
-
-
 import {Client} from "@notionhq/client";
 import {NotionToMarkdown} from "notion-to-md";
-
 
 const translate = async (req,res) => {
     const notion = new Client({
